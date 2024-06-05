@@ -16,11 +16,11 @@
       integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="regis.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- login page -->
+    <!-- regis page -->
     <div class="loginpage row">
       
       <div class="col-md-6">
@@ -33,34 +33,42 @@
                 <img src="/image/389a5964b4945c2298602ae4b4f46142.png" style="color: #f37523; font-size: 10px; width: 150px; height: 17px;"/>
   
             </h1>
-            <h2 class="selamat">Selamat Datang !</h2>
-            <h3 class="title">Log in di bawah untuk akses akun mu</h3>
-            <label class="form-label">Email:</label>
+            <h2 class="selamat">Daftar</h2>
+            <h3 class="title">Coba kemudahan bertani dalam genggaman</h3>
+            <label class="form-label">Nama Lengkap</label>
             <input 
                 type="text" 
-                placeholder="masukkan alamat email"
+                placeholder="masukkan nama lengkap"
                 onChange="{handleEmailChange}" /><br/>
-            <label class="form-label">Password:</label>
+            <label class="form-label">No HP</label>
+            <input 
+                    type="text" 
+                    placeholder="masukkan nomor hp"
+                    onChange="{handleEmailChange}" /><br/>
+            <label class="form-label">Password</label>
             <input 
                 type="password" 
                 placeholder="masukkan password"
                 onChange="{handlePasswordChange}" /><br/>
             <p class="forget">Tampilkan password</p>
             <button class="masuk" >
-               Masuk
+               Buat akun baru
             </button>
             <hr>
-            <p class="atau">Atau masuk dengan</p>
+            <p class="atau">Atau daftar dengan</p>
             <button class="button-login" >
-              <img src="image/new-google-favicon-512.png" style="width: 16px; height: 16px;"> Masuk dengan Google
+              <img src="/image/new-google-favicon-512.png" style="width: 16px; height: 16px;"> Daftar dengan Google
               
            </button>
            <button class="button-login" >
-            <img src="image/Facebook_f_logo_(2019).svg" style="width: 16px; height: 16px;"> Masuk dengan Facebook
+            <img src="/image/Facebook_f_logo_(2019).svg" style="width: 16px; height: 16px;"> Daftar dengan Facebook
          </button>
-         <p class="atau" style="font-size: 16px;">Belum punya akun ?<span style="color: #3267E3;"> Sign up</span> </p>
-        <div class="image">"<img class="image1" src="image/cea1130156166608086f863b9dbe28fd.png" style="width: 100px; height: 40px;">
-        <span><img src="image/c0c21c014ae892e296cceea0c1a627a4.png" style="width: 50px; height: 50px;"></span></div>
+         <p class="atau" style="font-size: 16px;">Sudah punya akun?
+          <a href="/pages/login/index.html">
+          <span style="color: #3267E3;">Log in</span>
+          </a> </p>
+        <div class="image"><img class="image1" src="/image/cea1130156166608086f863b9dbe28fd.png" style="width: 100px; height: 40px;">
+        <span><img src="/image/c0c21c014ae892e296cceea0c1a627a4.png" style="width: 50px; height: 50px;"></span></div>
         </div>
       
        
