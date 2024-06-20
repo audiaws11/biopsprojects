@@ -143,15 +143,37 @@ header {
     margin-right: 20px;
 }
 
-.button1 {
+.button-add {
+    width:200px;
     margin-right: 10px;
     padding: 5px 10px;
-    background-color: #ffffff;
-    color: #9DB74C;
+    background-color: #9DB74C;
+    color: #ffffff;
     border: 1px solid #9DB74C;
     border-radius: 6px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+
+.button-add:hover {
+    background-color: #ffffff;
+    border: 1px solid #9DB74C;
+    color: #9DB74C;
+}
+
+.breadcrumb {
+    color: #9DB74C;
+    display: inline;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.breadcrumb.disabled {
+    color: #CCCCCC; 
+    pointer-events: none;
+    cursor: default; 
 }
 
 .button-dropdown{
@@ -212,24 +234,41 @@ header {
     margin-bottom: 20px;
 }
 
-.condition-box {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    flex: 1;
-    border-radius: 12px;
-    height: 375px;
-    width: 555px;
-    margin-right: 10px;
-    
-}
 
 .condition-box h3 {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
+
+.image-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    border-radius: 12px;
+    height: 450px;
+    width: 1120px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.image-box {
+    transition: transform 0.3s ease; 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    transform: scale(1.2);
+}
+
+.image-container:hover .image-box {
+    transform: scale(1); 
+}
+
 .button-dropdown1{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
@@ -285,7 +324,7 @@ header {
     border: 1px solid #ccc;
     box-sizing: border-box;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 14px;
     padding: 15px;
     margin-top: 5px;
     display:inline-flex;
@@ -497,9 +536,19 @@ header {
 .logo1 {
    margin-bottom: 30px;
 }
+
+
+.card-box{
+   
+    display:flex;
+}
+.card-detail{
+    padding-top: 20px;
+    padding-right: 20px;
+}
 .card {
-    height:230px;
-    width: 170px;
+    height:350px;
+    width: 260px;
     padding:10px;
    
 }
@@ -517,13 +566,31 @@ header {
     color: #9E9E9E;
     line-height: 14px; 
     margin-bottom: 2px; 
+    text-align: justify;
 }
 
+.card-text2 {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    line-height: 14px; 
+    margin-bottom: 2px; 
+    text-align: justify;
+}
+.card-text3 {
+    font-family: "Inter", sans-serif;
+    font-size: 6px;
+    color: #1A441D;
+    line-height: 14px; 
+    margin-bottom: 2px; 
+    text-align: justify;
+}
+
+
 .button-kebun {
-    width: 120px;
+    width: 210px;
     height: 27px;
     color: #fff;
-    border: none;
+    border: 1px solid #9DB74C;
     border-radius: 6px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -536,7 +603,7 @@ header {
 
 
 .button-kebun:hover {
-    width: 120px;
+    width: 210px;
     height: 27px;
     color: black;
     border: 1px solid #9DB74C;
@@ -551,8 +618,8 @@ header {
 }
 
 .image-card {
-    height: 90px;
-    width: 150px;
+    height: 140px;
+    width: 240px;
     object-fit: cover;
 }
 .button-container {

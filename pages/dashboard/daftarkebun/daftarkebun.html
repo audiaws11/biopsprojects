@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomotion Dashboard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="daftarkebun.css">
+</head>
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="logo1"><img src="/image/389a5964b4945c2298602ae4b4f46142.png" style="color: #f37523; font-size: 10px; width: 200px; height: 22px;"/></div>
+        <ul>
+            <li><a href="../halamanutama/halamanutama.html"><button class="button-dashboard"><i class="bi bi-house-door-fill" style="margin-right: 10px;"></i>Halaman Utama</button></a></li>
+            <li><a href="../daftarkebun/daftarkebun.html"><button class="button-dashboard"><i class="bi bi-tree" style="margin-right: 10px;"></i>Daftar Kebun</button></a></li>
+            <li><button class="button-dashboard"><i class="bi bi-graph-up" style="margin-right: 10px;"></i>Statistik Kebun</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-box-fill"style="margin-right: 10px;"></i>Stok Kebun</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-calendar3"style="margin-right: 10px;"></i>Penjadwalan</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-flower3" style="margin-right: 10px;"></i>Informasi Budidaya</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-people-fill"style="margin-right: 10px;"></i>Kelompok Tani</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-person-fill-gear"style="margin-right: 10px;"></i>Pengaturan Akun</button></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="top-header">
+            
+            <div class="header-welcome">
+                <h1>Daftar Kebun</h1>
+                <p>Kebun Lembang</p>
+            </div>
+            <div class="header-date row">
+                <p class="col-11 date">12 Januari 2024</p><br>
+                <div class="notification-icon col-1">
+                    <i class="notifcation bi-bell-fill" style="color: #9DB74C; font-size: 20px; text-align: left;margin-right: 30px; padding-right: 20px;"></i><span class="notification-badge"></span>
+                </div>
+                <p class="col-11">10:30:32 WIB, Jawa Barat</p>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="section">
+               
+                <button class="button-add">Tambah Kebun<i class="bi bi-plus-circle-fill" style="margin-left:10px;"></i></button>
+                <p style="padding-top: 15px;">
+                    <a href="" class="breadcrumb">><span style="margin: 10px;">Map</span></a>
+                    <a href="" class="breadcrumb disabled" style="margin-left: 15px">><span style="margin: 10px;">Detail Kebun</span></a>
+                </p>
+            </div>
+                
+            </div>
+                <!-- image kebun-->
+                    <div class="image-container">
+                        <img src="https://s3-alpha-sig.figma.com/img/3a36/0e6e/1e78cfa1942b899f9eb134c12473ec14?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MkNWRznnSjRizN8B2vB1E4uG3g7kYn6qBwhsOX~aRii2ilma0s8ZOLTpEQT5aDuQBJrakJp1m0BV3ZoVyb2OS2ue3g7eHdMjIKYPnpthuh4IrJnRdU~jjW1BeooalEEgfmkNTTbUkyjO54WonkpDXXZw8ZWvlw00AnsHdm8hV66-d5DB5wY0VddrbqxEIQM7KbHCzEsoV31EnDWPf7ctWy9~eKJELEhJRA44UJKx9b5qrFObHsx1jokHbu~HyjdceMn8Q2cMzxUs8~C4z5yZNNz3R-XV7-cr3100ee-~0tXZrZmcj1qzBJtKCt-~Bit1abB8F66D1~z9EvmclENdVg__" class="image-box" alt="image-1">
+                    </div>
+            
+                <!-- content kebun -->
+                <div class="row">
+                    <div class="card-box">
+                        <div class="card-detail">
+                            <div class="card">
+                                <img src="https://s3-alpha-sig.figma.com/img/405c/c7fa/9081b9119860bf4da15cfa477db403fd?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z8v501gyAiK~OdA6i2O3AsOWXS4lYLu7b88DOpmYk6uWVUf~uH0g5vhDj~P78fB15rifB2meqnKJD9Gn6hAPz4v~Ir-Aj6BJVNfwWrAtaXVDX6bKblmr0F6aVLS4LfAyPECExlSLLC-3zOA06nfJolj5VM5ME3clicxMMJ599m~7TM3sFZQwjuq6wWvd73E78paIKJXvdRRMtnqZ6HbAPpRxIvWiqxxPPysArkzPFdODXguT0oAiYFVpO6dlmowcnj1Ws7IWvQJa4S1y8OhiliVbGm2x1ICvlBKYPaGI9lg0wST1sjIjaoR78Qs8RUckaHatF8zmDI8xl1fqktvaMw__" class="rounded image-card" alt="image-1">
+                                <div class="card-body">
+                                  <p class="card-title">Greenhouse Melon (Rock Melon)</p>
+                                  <p class="card-text">Rock Melon atau Cantaloupe, Melon Manis, adalah salah satu jenis dari spesies muskmelon dengan nama latin Cucumis melo var. Cantalupo.</p>
+                                  <div class="row" style="margin-top: 5px;">
+                                    <p class="card-text2 col-4"><i class="bi bi-brightness-low-fill" style="color: #FFCE31; margin-right: 3px;"></i>Terik</p>
+                                    <p class="card-text2 col-4"><i class="bi bi-droplet"style="margin-right: 3px;"></i>59,7%</p>
+                                    <p class="card-text2 col-4"><i class="bi bi-wind" style="margin-right: 3px;"></i>59,7%</p>
+                                    <p class="card-text2 col-4"><i class="bi bi-sun-fill" style="margin-right: 3px;"></i>59,7%</p>
+                                    <p class="card-text2 col-4"><i class="bi bi-compass" style="margin-right: 3px;"></i>59,7%</p>
+                                  </div>
+                                  <p class="card-text3">Pembaruan data terakhir : 14 Jan 24 16:00:30 WIB</p>
+                                  <a href="#" class="btn button-kebun">Lihat Kebun</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="card-detail">
+                            <div class="card">
+                                <img src="https://s3-alpha-sig.figma.com/img/df84/752d/f191ed8db9d6ecbd41e9da6fd0f9cb0e?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oKZBRdNWdYgtLY309DXN8L8OuFJlMKFSovjZR0C3-SiBblwinu3kDBuotVidPLbpVT4BXFHQLzdNJ4VRRJQBAzm1v8v5QqEldbVIcr7wzRgm6g0JNr5x9ABPazeyftu5Y2DuaNl9N5y9HDU8VoNwK37veKW04JnAtj0cGnlI9LgpS-pTzZPPOcRVZkYbxvK04XpgQBpLPiSVcFX~qmeFffibp8ca4p0~jLrxPj9pvFsR3lVF5UvIVeI9vFTMcb16n1Nt38Y4shuVbbwMEu8kSFREySRaRxf710EFaK2Mjl7ZrMalmeefRoNNZ0t4o-tHjW~TZ1G327VB5S6CrWMDpA__" class="rounded image-card" alt="image-2">
+                                <div class="card-body">
+                                    <p class="card-title">Kebun Cabai</p>
+                                    <p class="card-text">Tanaman cabai termasuk famili Solanaceae genus Capsicum. Famili ini memiliki 25 spesies liar dan 5 speises yang sudah didomestikasi.</p>
+                                    <div class="row" style="margin-top: 5px;">
+                                      <p class="card-text2 col-4"><i class="bi bi-brightness-low-fill" style="color: #FFCE31; margin-right: 3px;"></i>Terik</p>
+                                      <p class="card-text2 col-4"><i class="bi bi-droplet"style="margin-right: 3px;"></i>59,7%</p>
+                                      <p class="card-text2 col-4"><i class="bi bi-wind" style="margin-right: 3px;"></i>59,7%</p>
+                                      <p class="card-text2 col-4"><i class="bi bi-sun-fill" style="margin-right: 3px;"></i>59,7%</p>
+                                      <p class="card-text2 col-4"><i class="bi bi-compass" style="margin-right: 3px;"></i>59,7%</p>
+                                    </div>
+                                    <p class="card-text3">Pembaruan data terakhir : 14 Jan 24 16:00:30 WIB</p>
+                                    <a href="#" class="btn button-kebun">Lihat Kebun</a>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="card-detail">
+                            <div class="card">
+                                <img src="https://s3-alpha-sig.figma.com/img/c6e6/0d30/f5876aa8de8e23ff5176de07d4d2eda8?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=d-4McZm4cRRI-xDpSVzmNBtPGaqgvTYqJbaWfHWkXVQ6jRThQXFw64V1NGtH2mN6EOLmgzpHjxCDZUjF3IenQt4MEzBC9qBHvL0vcZ6MHrP8g~gnkoGRgZmkmu0aqqnWbYhc3gAVdPE0P-8Vt6329-l2e6yEa8zPppTfFzzD1F05Xxr~ZhrXeA1L5Xoudbh~K6VDN3Xj4Y-vmN3NHHI9Ap8cyjkPN5oRl4myNI5tIeJacoqDFFgVbxyvQsxbZkHnk5TBIsxfGeXdruJ6q2fPjkn939VnonSqPgW-~PSKm~P4VZTfnvMv-RpSmlQVnCKnjomqyIhHg6Ir3duLy1Q4rw__" class="rounded image-card" alt="image-3">
+                                <div class="card-body">
+                                    <p class="card-title">Kebun Paprika</p>
+                                    <p class="card-text">Paprika (Capsicum annuum var. grossum) merupakan tanaman sayuran yang relatif baru dikenal di Indonesia...</p>
+                                    <div class="row" style="margin-top: 5px;">
+                                      <p class="card-text2 col-4"><i class="bi bi-brightness-low-fill" style="color: #FFCE31; margin-right: 3px;"></i>Terik</p>
+                                      <p class="card-text2 col-4"><i class="bi bi-droplet"style="margin-right: 3px;"></i>59,7%</p>
+                                      <p class="card-text2 col-4"><i class="bi bi-wind" style="margin-right: 3px;"></i>59,7%</p>
+                                      <p class="card-text2 col-4"><i class="bi bi-sun-fill" style="margin-right: 3px;"></i>59,7%</p>
+                                      <p class="card-text2 col-4"><i class="bi bi-compass" style="margin-right: 3px;"></i>59,7%</p>
+                                    </div>
+                                    <p class="card-text3">Pembaruan data terakhir : 14 Jan 24 16:00:30 WIB</p>
+                                    <a href="#" class="btn button-kebun">Lihat Kebun</a>
+                                  </div>
+                              </div>
+                        </div>
+                    
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
